@@ -37,8 +37,8 @@ import { defineProps, defineEmits } from "vue";
 import { TABLE_ACTION } from "~/utils/constants.js";
 import TableActionCard from "~/layouts/TableActionCard.vue";
 import TableActionDrawerHeader from "~/components/Drawer/TableActionDrawerHeader.vue";
-import TableFilterAction from "~/components/Drawer/TableFilterAction.vue";
-import TableGroupAction from "~/components/Drawer/TableGroupAction.vue";
+import TableFilterAction from "~/components/TableFilter/TableFilterAction.vue";
+import TableGroupAction from "~/components/TableGroup/TableGroupAction.vue";
 const components = {
   TableActionCard,
   TableActionDrawerHeader,

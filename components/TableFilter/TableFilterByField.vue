@@ -7,8 +7,9 @@
              <Icon name="mdi-close" size="20"  />
         </v-btn>
       </div>
-      <date-filter v-if="filter.type==='date'" :filter="filter" />
-      <number-filter v-else-if="filter.type==='number'"/> 
+      <date-filter v-if="filter.type==='date'" :filter-data="filter" />
+      <number-filter v-else-if="filter.type==='number'" :filter-data="filter"/> 
+      <string-filter v-else-if="filter.type==='string'" :filter-data="filter"/> 
     </div>
   </div>
 </template>
@@ -17,9 +18,11 @@
 import { defineProps } from "vue";
 import DateFilter from "~/components/Filters/DateFilter.vue";
 import NumberFilter from "~/components/Filters/NumberFilter.vue";
+import StringFilter from "~/components/Filters/StringFilter.vue";
 const components = {
   DateFilter,
   NumberFilter,
+  StringFilter
 };
 const props = defineProps({
   filterDataByField: {

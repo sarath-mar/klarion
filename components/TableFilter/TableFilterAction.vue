@@ -1,7 +1,6 @@
 <template>
   <div>
     <p class="font-medium mb-2">Filter By</p>
-    {{ filterData }}
     <chip-filter
       :items="tableFilterIssueType"
       label="Issue Type"
@@ -27,7 +26,7 @@ import { TABLE_ACTION } from "~/utils/constants.js";
 import { tableFilterIssueType } from "~/mock-data/tableFilterIssueType.js";
 import { tableFilterTeams } from "~/mock-data/tableFilterTeams.js";
 import TableOptionSelector from "~/components/Drawer/TableOptionSelector.vue";
-import TableFilterByField from "~/components/Drawer/TableFilterByField.vue";
+import TableFilterByField from "~/components/TableFilter/TableFilterByField.vue";
 import ChipFilter from "~/components/Filters/ChipFilter.vue";
 const components = {
   TableOptionSelector,
@@ -47,6 +46,9 @@ const onTeamsSelection = (selectedValues) => {
 };
 const onSelectionChange = (item) => {
   const { remainingFilters } = filterData;
+  if(remainingFilters.has(item.key)) {
+    return;
+  } 
   remainingFilters.set(item.key, {
     ...item,
     scope: "",

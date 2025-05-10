@@ -9,7 +9,7 @@
   >
     <template #activator="{ props }">
       <v-text-field
-      hide-details
+        hide-details
         density="compact"
         variant="outlined"
         :value="formatDate(date)"
@@ -32,7 +32,7 @@ import { defineEmits, ref } from "vue";
 const menu = ref(false);
 const date = ref(new Date());
 // const date = ref(new Date('2023-10-01'));
-const emit = defineEmits(["date"]);
+const emit = defineEmits(["on-date-change"]);
 
 const formatDate = (date) => {
   const day = String(date.getDate()).padStart(2, "0");
@@ -52,10 +52,12 @@ const formatMinMaxDate = (date) => {
   const day = String(date.getDate()).padStart(2, "0");
   return `${year}-${month}-${day}`;
 };
-
+onMounted(() => {
+  onMenuInput(date.value);
+});
 const onMenuInput = (val) => {
   menu.value = false;
-  emit("date", defaultDateFormat(val));
+  emit("on-date-change", defaultDateFormat(val));
 };
 </script>
 
