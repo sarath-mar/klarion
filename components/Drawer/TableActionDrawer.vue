@@ -1,0 +1,64 @@
+<template>
+  <v-layout>
+    <v-navigation-drawer
+      temporary
+      :width="650"
+      :model-value="showDrawer"
+      :location="$vuetify.display.mobile ? 'bottom' : 'end'"
+    >
+      <table-action-card>
+        <template #header>
+          <table-action-drawer-header
+            :selected-action="selectedAction"
+            @drawer-closed="closeDrawer"
+          />
+        </template>
+        <template #content>
+          <table-filter-action
+            v-if="selectedAction?.value === TABLE_ACTION.FILTER"
+          />
+          <table-group-action
+            v-else-if="selectedAction?.value === TABLE_ACTION.GROUP"
+          />
+          <div class="d-flex justify-end ga-2">
+            <v-btn size="small" class="text-none font-small" @click="closeDrawer">Cancel</v-btn>
+            <v-btn size="small" class="text-none secondary-bg-color font-small"
+             @click="closeDrawer" >Apply</v-btn
+            >
+          </div>
+        </template>
+      </table-action-card>
+    </v-navigation-drawer>
+  </v-layout>
+</template>
+
+<script setup>
+import { defineProps, defineEmits } from "vue";
+import { TABLE_ACTION } from "~/utils/constants.js";
+import TableActionCard from "~/layouts/TableActionCard.vue";
+import TableActionDrawerHeader from "~/components/Drawer/TableActionDrawerHeader.vue";
+import TableFilterAction from "~/components/Drawer/TableFilterAction.vue";
+import TableGroupAction from "~/components/Drawer/TableGroupAction.vue";
+const components = {
+  TableActionCard,
+  TableActionDrawerHeader,
+  TableFilterAction,
+};
+const props = defineProps({
+  showDrawer: {
+    type: Boolean,
+    required: true,
+    default: false,
+  },
+  selectedAction: {
+    type: Object,
+    required: false,
+  },
+});
+const emit = defineEmits(["drawerClosed"]);
+function closeDrawer() {
+  emit("drawerClosed");
+}
+</script>
+
+<style lang="scss" scoped></style>

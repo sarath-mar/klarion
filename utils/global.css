@@ -1,0 +1,79 @@
+:root {
+  --primary-background: #f2f4f5;
+  --secondary-background: #f68989;
+  --primary-text-color: #000000;
+  --secondary-text-color: #ffffff;
+  --text-size-small: 0.875rem; 
+  --text-size-medium: 1rem;    
+  --text-size-large: 1.25rem;  
+  --text-size-xlarge: 1.5rem;
+  }
+  .primary-bg-color {
+    background-color: var(--primary-background) !important;
+  }
+  .secondary-bg-color {
+    background-color: var(--secondary-background) !important;
+  }
+  .font-small{
+    font-size: var(--text-size-small);
+  }
+  .font-medium{
+    font-size: var(--text-size-medium);
+  }
+   .font-syne {
+    font-family: 'Syne', sans-serif;
+   } 
+  
+      
+html {
+  font-family: "League Spartan", sans-serif;
+  scroll-behavior: smooth;
+}
+.c-pointer {
+  cursor: pointer;
+}
+.margin-height {
+  margin-top: 160px !important;
+}
+.text-primary {
+  color: var(--primary-text-color);
+}
+.text-secondary {
+  color: var(--secondary-text-color);
+}
+.bg-text {
+  color: var(--secondary-text-color) !important;
+  background-color: var(--primary-text-color) !important;
+}
+.ellipsis {
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  overflow: hidden; /* Hide the overflowing text */
+  text-overflow: ellipsis; /* Display the ellipsis when text overflows */
+}
+
+@font-face {
+  font-family: adobe-garamond-pro;
+  src: url(https://use.typekit.net/af/28328c/00000000000000007735d924/30/l?subset_id=2&fvd=i4&v=3)
+      format("woff2"),
+    url(https://use.typekit.net/af/28328c/00000000000000007735d924/30/d?subset_id=2&fvd=i4&v=3)
+      format("woff"),
+    url(https://use.typekit.net/af/28328c/00000000000000007735d924/30/a?subset_id=2&fvd=i4&v=3)
+      format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: adobe-garamond-pro;
+  src: url(https://use.typekit.net/af/095ec6/00000000000000007735d921/30/l?subset_id=2&fvd=i7&v=3)
+      format("woff2"),
+    url(https://use.typekit.net/af/095ec6/00000000000000007735d921/30/d?subset_id=2&fvd=i7&v=3)
+      format("woff"),
+    url(https://use.typekit.net/af/095ec6/00000000000000007735d921/30/a?subset_id=2&fvd=i7&v=3)
+      format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: auto;
+}
