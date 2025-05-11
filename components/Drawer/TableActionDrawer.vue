@@ -22,7 +22,7 @@
           />
           <div class="d-flex justify-end ga-2">
             <v-btn size="small" class="text-none font-small" @click="closeDrawer">Cancel</v-btn>
-            <v-btn size="small" class="text-none secondary-bg-color font-small"
+            <v-btn size="small" class="text-none apply-btn secondary-bg-color font-small"
              @click="closeDrawer" >Apply</v-btn
             >
           </div>
@@ -61,4 +61,8 @@ function closeDrawer() {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.apply-btn{
+ color:var(--secondary-text-color)
+}
+</style>
