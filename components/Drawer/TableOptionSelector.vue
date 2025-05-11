@@ -8,6 +8,7 @@
       :placeholder="actionLabel.placeHolder"
       auto-select-first
       clear-on-select
+      v-model="autocompleteValue"
       @update:modelValue="onSelectionChange"
       item-value="key"
       item-title="displayName"
@@ -30,10 +31,12 @@ const props = defineProps({
   },
 });
 const emit = defineEmits(["selection-change"]);
-// const autocompleteValue = ref(null);
 const onSelectionChange = (value) => {
+    
     emit("selection-change", value);
+    autocompleteValue.value = null;
 };
+const autocompleteValue = ref(null);
 const actionLabel = computed(() => {
   const actionData = { placeHolder: "", title: "", items: [] };
   switch (props.actionType) {
