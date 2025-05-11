@@ -1,6 +1,6 @@
 <template>
   <div class="pa-6">
-    {{ sharedData }}
+   
     <paginated-table />
   </div>
 </template>
