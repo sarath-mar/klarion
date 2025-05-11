@@ -9,7 +9,9 @@ export const tableData = [
         email: 'user1@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 2,
@@ -21,7 +23,9 @@ export const tableData = [
         email: 'user2@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 3,
@@ -33,7 +37,9 @@ export const tableData = [
         email: 'user3@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 4,
@@ -45,7 +51,9 @@ export const tableData = [
         email: 'user4@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 5,
@@ -57,7 +65,9 @@ export const tableData = [
         email: 'user5@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 6,
@@ -69,7 +79,9 @@ export const tableData = [
         email: 'user6@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 7,
@@ -81,7 +93,9 @@ export const tableData = [
         email: 'user7@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 8,
@@ -93,7 +107,9 @@ export const tableData = [
         email: 'user8@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 9,
@@ -105,7 +121,9 @@ export const tableData = [
         email: 'user9@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 10,
@@ -117,7 +135,9 @@ export const tableData = [
         email: 'user10@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 11,
@@ -129,7 +149,9 @@ export const tableData = [
         email: 'user11@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 12,
@@ -141,7 +163,9 @@ export const tableData = [
         email: 'user12@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 13,
@@ -153,7 +177,9 @@ export const tableData = [
         email: 'user13@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 14,
@@ -165,7 +191,9 @@ export const tableData = [
         email: 'user14@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 15,
@@ -177,7 +205,9 @@ export const tableData = [
         email: 'user15@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 16,
@@ -189,7 +219,9 @@ export const tableData = [
         email: 'user16@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 17,
@@ -201,7 +233,9 @@ export const tableData = [
         email: 'user17@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 18,
@@ -213,7 +247,9 @@ export const tableData = [
         email: 'user18@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 19,
@@ -225,7 +261,9 @@ export const tableData = [
         email: 'user19@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 20,
@@ -237,7 +275,9 @@ export const tableData = [
         email: 'user20@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 21,
@@ -249,7 +289,9 @@ export const tableData = [
         email: 'user21@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 22,
@@ -261,7 +303,9 @@ export const tableData = [
         email: 'user22@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 23,
@@ -273,7 +317,9 @@ export const tableData = [
         email: 'user23@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 24,
@@ -285,7 +331,9 @@ export const tableData = [
         email: 'user24@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 25,
@@ -297,7 +345,9 @@ export const tableData = [
         email: 'user25@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 26,
@@ -309,7 +359,9 @@ export const tableData = [
         email: 'user26@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 27,
@@ -321,7 +373,9 @@ export const tableData = [
         email: 'user27@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 28,
@@ -333,7 +387,9 @@ export const tableData = [
         email: 'user28@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 29,
@@ -345,7 +401,9 @@ export const tableData = [
         email: 'user29@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 30,
@@ -357,7 +415,9 @@ export const tableData = [
         email: 'user30@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 31,
@@ -369,7 +429,9 @@ export const tableData = [
         email: 'user31@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 32,
@@ -381,7 +443,9 @@ export const tableData = [
         email: 'user32@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 33,
@@ -393,7 +457,9 @@ export const tableData = [
         email: 'user33@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 34,
@@ -405,7 +471,9 @@ export const tableData = [
         email: 'user34@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 35,
@@ -417,7 +485,9 @@ export const tableData = [
         email: 'user35@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 36,
@@ -429,7 +499,9 @@ export const tableData = [
         email: 'user36@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 37,
@@ -441,7 +513,9 @@ export const tableData = [
         email: 'user37@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 38,
@@ -453,7 +527,9 @@ export const tableData = [
         email: 'user38@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 39,
@@ -465,7 +541,9 @@ export const tableData = [
         email: 'user39@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 40,
@@ -477,7 +555,9 @@ export const tableData = [
         email: 'user40@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 41,
@@ -489,7 +569,9 @@ export const tableData = [
         email: 'user41@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 42,
@@ -501,7 +583,9 @@ export const tableData = [
         email: 'user42@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 43,
@@ -513,7 +597,9 @@ export const tableData = [
         email: 'user43@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 44,
@@ -525,7 +611,9 @@ export const tableData = [
         email: 'user44@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 45,
@@ -537,7 +625,9 @@ export const tableData = [
         email: 'user45@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 46,
@@ -549,7 +639,9 @@ export const tableData = [
         email: 'user46@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 47,
@@ -561,7 +653,9 @@ export const tableData = [
         email: 'user47@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 48,
@@ -573,7 +667,9 @@ export const tableData = [
         email: 'user48@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 49,
@@ -585,7 +681,9 @@ export const tableData = [
         email: 'user49@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 50,
@@ -597,7 +695,9 @@ export const tableData = [
         email: 'user50@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 51,
@@ -609,7 +709,9 @@ export const tableData = [
         email: 'user51@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 52,
@@ -621,7 +723,9 @@ export const tableData = [
         email: 'user52@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 53,
@@ -633,7 +737,9 @@ export const tableData = [
         email: 'user53@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 54,
@@ -645,7 +751,9 @@ export const tableData = [
         email: 'user54@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 55,
@@ -657,7 +765,9 @@ export const tableData = [
         email: 'user55@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 56,
@@ -669,7 +779,9 @@ export const tableData = [
         email: 'user56@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 57,
@@ -681,7 +793,9 @@ export const tableData = [
         email: 'user57@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 58,
@@ -693,7 +807,9 @@ export const tableData = [
         email: 'user58@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 59,
@@ -705,7 +821,9 @@ export const tableData = [
         email: 'user59@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 60,
@@ -717,7 +835,9 @@ export const tableData = [
         email: 'user60@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 61,
@@ -729,7 +849,9 @@ export const tableData = [
         email: 'user61@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 62,
@@ -741,7 +863,9 @@ export const tableData = [
         email: 'user62@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 63,
@@ -753,7 +877,9 @@ export const tableData = [
         email: 'user63@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 64,
@@ -765,7 +891,9 @@ export const tableData = [
         email: 'user64@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 65,
@@ -777,7 +905,9 @@ export const tableData = [
         email: 'user65@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 66,
@@ -789,7 +919,9 @@ export const tableData = [
         email: 'user66@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 67,
@@ -801,7 +933,9 @@ export const tableData = [
         email: 'user67@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 68,
@@ -813,7 +947,9 @@ export const tableData = [
         email: 'user68@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 69,
@@ -825,7 +961,9 @@ export const tableData = [
         email: 'user69@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 70,
@@ -837,7 +975,9 @@ export const tableData = [
         email: 'user70@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 71,
@@ -849,7 +989,9 @@ export const tableData = [
         email: 'user71@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 72,
@@ -861,7 +1003,9 @@ export const tableData = [
         email: 'user72@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 73,
@@ -873,7 +1017,9 @@ export const tableData = [
         email: 'user73@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 74,
@@ -885,7 +1031,9 @@ export const tableData = [
         email: 'user74@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 75,
@@ -897,7 +1045,9 @@ export const tableData = [
         email: 'user75@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 76,
@@ -909,7 +1059,9 @@ export const tableData = [
         email: 'user76@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 77,
@@ -921,7 +1073,9 @@ export const tableData = [
         email: 'user77@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 78,
@@ -933,7 +1087,9 @@ export const tableData = [
         email: 'user78@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 79,
@@ -945,7 +1101,9 @@ export const tableData = [
         email: 'user79@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 80,
@@ -957,7 +1115,9 @@ export const tableData = [
         email: 'user80@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 81,
@@ -969,7 +1129,9 @@ export const tableData = [
         email: 'user81@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 82,
@@ -981,7 +1143,9 @@ export const tableData = [
         email: 'user82@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 83,
@@ -993,7 +1157,9 @@ export const tableData = [
         email: 'user83@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 84,
@@ -1005,7 +1171,9 @@ export const tableData = [
         email: 'user84@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 85,
@@ -1017,7 +1185,9 @@ export const tableData = [
         email: 'user85@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 86,
@@ -1029,7 +1199,9 @@ export const tableData = [
         email: 'user86@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 87,
@@ -1041,7 +1213,9 @@ export const tableData = [
         email: 'user87@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 88,
@@ -1053,7 +1227,9 @@ export const tableData = [
         email: 'user88@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 89,
@@ -1065,7 +1241,9 @@ export const tableData = [
         email: 'user89@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 90,
@@ -1077,7 +1255,9 @@ export const tableData = [
         email: 'user90@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 91,
@@ -1089,7 +1269,9 @@ export const tableData = [
         email: 'user91@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 92,
@@ -1101,7 +1283,9 @@ export const tableData = [
         email: 'user92@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 93,
@@ -1113,7 +1297,9 @@ export const tableData = [
         email: 'user93@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 94,
@@ -1125,7 +1311,9 @@ export const tableData = [
         email: 'user94@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 95,
@@ -1137,7 +1325,9 @@ export const tableData = [
         email: 'user95@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 96,
@@ -1149,7 +1339,9 @@ export const tableData = [
         email: 'user96@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 97,
@@ -1161,7 +1353,9 @@ export const tableData = [
         email: 'user97@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     },
     {
         id: 98,
@@ -1173,7 +1367,9 @@ export const tableData = [
         email: 'user98@example.com',
         priority: 'Medium',
         topic: 'Service Request',
-        type: 'Query'
+        type: 'Query',
+        issue: 'root',
+        team: 'operations'
     },
     {
         id: 99,
@@ -1185,7 +1381,9 @@ export const tableData = [
         email: 'user99@example.com',
         priority: 'Low',
         topic: 'Billing',
-        type: 'Request'
+        type: 'Request',
+        issue: 'redHag',
+        team: 'marketing'
     },
     {
         id: 100,
@@ -1197,10 +1395,11 @@ export const tableData = [
         email: 'user100@example.com',
         priority: 'High',
         topic: 'Product Issue',
-        type: 'Complaint'
+        type: 'Complaint',
+        issue: 'new',
+        team: 'product'
     }
 ]
-
 
 
 export const headerData = [

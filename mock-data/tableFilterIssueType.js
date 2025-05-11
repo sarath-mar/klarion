@@ -8,7 +8,7 @@ export const tableFilterIssueType = [
         displayName: 'Root Issues',
     },
     {
-        key: 'red_hag',
+        key: 'redHag',
         displayName: 'Red Hag Issues',
     }
 ];

@@ -17,6 +17,14 @@ import TableAction from "~/components/Tables/TableAction.vue";
 import { ref, reactive, inject } from "vue";
 import { tableData as mockData, headerData } from "~/mock-data/tableData.js";
 const sharedData = inject("sharedData");
+
+watch(
+  () => [sharedData.filterData, sharedData.groupData],
+  () => {
+    loadItems(pagination);
+  },
+  { deep: true }
+);
 const tableHeader = headerData;
 const itemsPerPage = ref(10);
 const loading = ref(false);
@@ -28,6 +36,16 @@ const pagination = reactive({
   itemsPerPage: itemsPerPage.value,
 });
 
+const applyFilters = (data, filters) => {
+  if (!filters) return data;
+
+  return data.filter((item) =>
+    Object.keys(filters).every((key) =>
+      item[key]?.toString().toLowerCase().includes(filters[key]?.toString().toLowerCase())
+    )
+  );
+};
+
 const loadItems = (options) => {
   loading.value = true;
   const { page, itemsPerPage } = options;
@@ -37,7 +55,10 @@ const loadItems = (options) => {
   const start = (page - 1) * itemsPerPage;
   const end = start + itemsPerPage;
 
-  tableData.value = mockData.slice(start, end);
+  let filteredData = applyFilters(mockData, sharedData.filterData);
+
+  tableData.value = filteredData.slice(start, end);
+  totalItems.value = filteredData.length;
   loading.value = false;
 };
 
