@@ -33,11 +33,13 @@ const components = {
   TableFilterByField,
   ChipFilter,
 };
-const filterData = reactive({
-  selectedFilterIssueType: [],
-  selectedFilterTeams: [],
-  remainingFilters: new Map(),
+const props = defineProps({
+  filterData: {
+    type: Object,
+    required: true,
+  },
 });
+const filterData = props.filterData;
 const onIssueSelection = (selectedValues) => {
   filterData.selectedFilterIssueType = [...selectedValues];
 };

@@ -1,14 +1,21 @@
 <template>
   <div class="pa-6">
+    {{ sharedData }}
     <paginated-table />
   </div>
 </template>
 
 <script setup>
+import { provide, reactive } from "vue";
 import PaginatedTable from "~/components/Tables/PaginatedTable.vue";
 
-defineProps({});
-defineEmits([]);
+const sharedData = reactive({
+  filterData: {},
+  groupData: {},
+  selectedColumns: [],
+});
+
+provide("sharedData", sharedData);
 
 const components = {
   PaginatedTable,

@@ -16,13 +16,14 @@ const components = {
   TableOptionSelector,
 };
 
-const groupData = reactive({
-  field: "",
-  orderBy: "asc",
-  displayName: "",
+const props = defineProps({
+  groupData: {
+    type: Object,
+    required: true,
+  },
 });
+const groupData = props.groupData;
 const onSelectionChange = (item) => {
-  console.log(item);
   groupData.field = item.key;
   groupData.displayName = item.displayName;
 };

@@ -14,11 +14,11 @@
 
 <script setup>
 import TableAction from "~/components/Tables/TableAction.vue";
-import { ref, reactive } from "vue";
+import { ref, reactive, inject } from "vue";
 import { tableData as mockData, headerData } from "~/mock-data/tableData.js";
-
+const sharedData = inject("sharedData");
 const tableHeader = headerData;
-const itemsPerPage = ref(5);
+const itemsPerPage = ref(10);
 const loading = ref(false);
 const totalItems = ref(mockData.length);
 const tableData = ref([]);
@@ -30,8 +30,6 @@ const pagination = reactive({
 
 const loadItems = (options) => {
   loading.value = true;
-
-  // Simulate server-side pagination
   const { page, itemsPerPage } = options;
   pagination.page = page;
   pagination.itemsPerPage = itemsPerPage;
@@ -43,7 +41,6 @@ const loadItems = (options) => {
   loading.value = false;
 };
 
-// Initialize table data
 loadItems(pagination);
 </script>
 
