@@ -38,12 +38,18 @@ const pagination = reactive({
 
 const applyFilters = (data, filters) => {
   if (!filters) return data;
+  if (filters.selectedFilterIssueType?.length) {
+    data = data.filter((item) =>
+      filters.selectedFilterIssueType.includes(item.issue)
+    );
+  }
 
-  return data.filter((item) =>
-    Object.keys(filters).every((key) =>
-      item[key]?.toString().toLowerCase().includes(filters[key]?.toString().toLowerCase())
-    )
-  );
+  if (filters.selectedFilterTeams?.length) {
+    data = data.filter((item) =>
+      filters.selectedFilterTeams.includes(item.team)
+    );
+  }
+  return data
 };
 
 const loadItems = (options) => {
