@@ -23,8 +23,6 @@
 import { defineProps, computed, ref, watch, defineEmits } from "vue";
 import { TABLE_ACTION } from "~/utils/constants.js";
 import { tableFields } from "~/mock-data/tableFields.js";
-import { tableFilterableFields } from "/mock-data/tableFilterableFields.js";
-import { tableGroupingFields } from "/mock-data/tableGroupingFields.js";
 
 const props = defineProps({
   actionType: {
@@ -55,12 +53,12 @@ const actionLabel = computed(() => {
 });
 function getFilterableFields() {
   return tableFields.filter((field) => {
-    return field.filterable && tableFilterableFields.includes(field.key);
+    return field.filterable 
   });
 }
 function getGroupingFields() {
   return tableFields.filter((field) => {
-    return field.groupable && tableGroupingFields.includes(field.key);
+    return field.groupable 
   });
 }
 </script>
