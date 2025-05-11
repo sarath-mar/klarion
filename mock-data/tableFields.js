@@ -1,17 +1,17 @@
 export const tableFields = [
     {
         "key": "feedbackId",
-        "displayName": "FeedbackId",
+        "displayName": "Feedback Id",
         "type": "number",
         "sortable": true,
-        "filterable": false,
+        "filterable":true,
         "groupable": false,
         "visible": true,
         "required": true
     },
     {
         "key": "feedbackDate",
-        "displayName": "FeedbackDate",
+        "displayName": "Feedback Date",
         "type": "date",
         "sortable": true,
         "filterable": true,

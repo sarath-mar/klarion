@@ -1,6 +1,6 @@
 <template>
     <v-row>
-      <v-col cols="3">
+      <v-col cols="6" sm="3">
         <v-select
         hide-details
           v-model="filterData.scope"
@@ -11,7 +11,7 @@
           item-title="displayName"
         ></v-select>
       </v-col>
-      <v-col cols="9">
+      <v-col cols="6" sm="9">
         <v-text-field  v-model="filterData.scopeValue" hide-details placeholder='Enter value' density="compact" variant="outlined"></v-text-field>
       </v-col>
     </v-row>

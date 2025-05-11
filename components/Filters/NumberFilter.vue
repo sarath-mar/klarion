@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col cols="3">
+    <v-col :cols="isBetween ? '4' : '6'" sm="3">
       <v-select
       hide-details
         v-model="filterData.scope"
@@ -11,8 +11,8 @@
         item-title="displayName"
       ></v-select>
     </v-col>
-    <v-col cols="9">
-      <v-row v-if="filterData.scope === 'between'">
+    <v-col :cols="isBetween ? '8' : '6'" sm="9">
+      <v-row v-if="isBetween">
         <v-col cols="6">
           <v-text-field type='number' v-model='filterData.scopeFrom' hide-details placeholder='Enter min value' density="compact" variant="outlined"></v-text-field>
         </v-col>
@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, ref, computed } from "vue";
 
 const numberFilterOptions = [
   { key: "equalTo", displayName: "Equal To" },
@@ -40,6 +40,7 @@ const props = defineProps({
     default: () => ({}),
   },
 });
+const isBetween = computed(() => props.filterData.scope === 'between');
 onMounted(() => {
   props.filterData.scope = numberFilterOptions[0].key;
 });

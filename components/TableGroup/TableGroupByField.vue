@@ -1,6 +1,6 @@
 <template>
   <v-row class="mb-3 align-center" v-if="groupData.field">
-    <v-col cols="8">
+    <v-col cols="6" sm='8'>
       <v-text-field
         v-model="groupData.displayName"
         density="compact"
@@ -9,7 +9,7 @@
         readonly
       ></v-text-field>
     </v-col>
-    <v-col cols="4">
+    <v-col cols="6" sm='4'>
       <v-row class="align-center ga-3 no-wrap">
         <v-select
           v-model="groupData.orderBy"
