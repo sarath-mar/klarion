@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col cols="3">
+    <v-col cols="6" sm="3">
       <v-select
         v-model="filterData.scope"
         density="compact"
@@ -11,7 +11,7 @@
         hide-details
       ></v-select>
     </v-col>
-    <v-col cols="3">
+    <v-col cols="6" sm="3">
       <v-select
         v-model="filterData.scopeValue"
         density="compact"
@@ -22,13 +22,13 @@
         hide-details
       ></v-select>
     </v-col>
-    <v-col v-if="filterData.scopeValue==='customRange'" cols="6">
+    <v-col v-if="filterData.scopeValue === 'customRange'" cols="12" sm="6">
       <v-row>
         <v-col cols="6">
-          <date-picker @on-date-change="onStartDateChange"/>
+          <date-picker @on-date-change="onStartDateChange" />
         </v-col>
         <v-col cols="6">
-         <date-picker @on-date-change="onEndDateChange"/>
+          <date-picker @on-date-change="onEndDateChange" />
         </v-col>
       </v-row>
     </v-col>
@@ -36,8 +36,8 @@
 </template>
 
 <script setup>
-import { onMounted,reactive } from 'vue';
-import DatePicker from '~/components/Common/DatePicker.vue';
+import { onMounted, reactive } from "vue";
+import DatePicker from "~/components/Common/DatePicker.vue";
 const components = {
   DatePicker,
 };
@@ -65,8 +65,8 @@ const dateFilterItems = [
   { key: "customRange", displayName: "Custom Range" },
 ];
 onMounted(() => {
-    props.filterData.scope = dateFilterOptions[0].key;
-    props.filterData.scopeValue = dateFilterItems[0].key;
+  props.filterData.scope = dateFilterOptions[0].key;
+  props.filterData.scopeValue = dateFilterItems[0].key;
 });
 const onStartDateChange = (date) => {
   props.filterData.scopeFrom = date;
@@ -76,5 +76,4 @@ const onEndDateChange = (date) => {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
