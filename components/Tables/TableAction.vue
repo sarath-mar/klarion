@@ -36,14 +36,14 @@ const actionData = [
     name: "Group",
     value: TABLE_ACTION.GROUP,
   },
-  {
-    icon: "mdi-dip-switch",
-    name: "Select Columns",
-  },
-  {
-    icon: "mdi-tray-arrow-down",
-    name: "Download",
-  },
+//   {
+//     icon: "mdi-dip-switch",
+//     name: "Select Columns",
+//   },
+//   {
+//     icon: "mdi-tray-arrow-down",
+//     name: "Download",
+//   },
 ];
 const showDrawer = ref(false);
 const selectedAction = ref(null);
