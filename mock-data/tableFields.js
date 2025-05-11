@@ -19,8 +19,8 @@ export const tableFields = [
         "visible": true
     },
     {
-        "key": "subject",
-        "displayName": "Subject",
+        "key": "processingStatus",
+        "displayName": "Status",
         "type": "string",
         "sortable": true,
         "filterable": true,
@@ -30,7 +30,7 @@ export const tableFields = [
     {
         "key": "incidents",
         "displayName": "Incidents",
-        "type": "string",
+        "type": "number",
         "sortable": true,
         "filterable": true,
         "groupable": false,

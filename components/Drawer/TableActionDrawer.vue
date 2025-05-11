@@ -1,6 +1,7 @@
 <template>
   <v-layout>
     <v-navigation-drawer
+      persistent
       temporary
       :width="650"
       :model-value="showDrawer"
@@ -79,10 +80,12 @@ const groupData = reactive({
   displayName: "",
 });
 const onApplyClick = () => {
-  sharedData.filterData = {
-    ...filterData,
-    remainingFilters: Array.from(filterData.remainingFilters.values()),
-  };
+  sharedData.filterData = JSON.parse(
+    JSON.stringify({
+      ...filterData,
+      remainingFilters: Array.from(filterData.remainingFilters.values()),
+    })
+  );
   sharedData.groupData = groupData;
   closeDrawer();
 };

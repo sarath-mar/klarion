@@ -16,6 +16,7 @@
 import TableAction from "~/components/Tables/TableAction.vue";
 import { ref, reactive, inject } from "vue";
 import { tableData as mockData, headerData } from "~/mock-data/tableData.js";
+import {applyNumberFilter, applyDateFilter, applyStringFilter  } from "~/mock-data/filterData.js";
 const sharedData = inject("sharedData");
 
 watch(
@@ -49,9 +50,25 @@ const applyFilters = (data, filters) => {
       filters.selectedFilterTeams.includes(item.team)
     );
   }
-  return data
+  if (filters.remainingFilters?.length) {
+    data = applyRemainingFilters(data, filters.remainingFilters);
+  }
+  return data;
 };
-
+const applyRemainingFilters = (data, remainingFilters) => {
+  remainingFilters?.forEach((filter) => {
+    if (filter.type === "number") {
+      data = applyNumberFilter(data, filter);
+    }
+    if (filter.type === "string") {
+      data = applyStringFilter(data, filter);
+    }
+    if (filter.type === "date") {
+      data = applyDateFilter(data, filter);
+    }
+  });
+  return data;
+};
 const loadItems = (options) => {
   loading.value = true;
   const { page, itemsPerPage } = options;
