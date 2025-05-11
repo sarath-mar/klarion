@@ -10,7 +10,7 @@
       ></v-text-field>
     </v-col>
     <v-col cols="4">
-      <v-row class="align-center ga-3">
+      <v-row class="align-center ga-3 no-wrap">
         <v-select
           v-model="groupData.orderBy"
           density="compact"
@@ -20,9 +20,9 @@
           item-title="displayName"
           hide-details
         >
-        <template #prepend-inner>
-        <Icon :name="iconName" />
-      </template></v-select>
+          <template #prepend-inner>
+            <Icon :name="iconName" /> </template
+        ></v-select>
         <Icon
           name="mdi-close"
           class="c-pointer mr-1"
@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-import { defineProps,computed } from "vue";
+import { defineProps, computed } from "vue";
 const props = defineProps({
   groupData: {
     type: Object,
@@ -52,7 +52,9 @@ const sortOptions = [
 ];
 
 const iconName = computed(() => {
-    return props.groupData.orderBy === "asc" ? "mdi-sort-ascending" : "mdi-sort-descending";
+  return props.groupData.orderBy === "asc"
+    ? "mdi-sort-ascending"
+    : "mdi-sort-descending";
 });
 const removeGroup = () => {
   props.groupData.field = "";

@@ -45,6 +45,9 @@ html {
   color: var(--secondary-text-color) !important;
   background-color: var(--primary-text-color) !important;
 }
+.no-wrap{
+  flex-wrap: nowrap !important;
+}
 .ellipsis {
   white-space: nowrap; /* Prevent text from wrapping to the next line */
   overflow: hidden; /* Hide the overflowing text */
