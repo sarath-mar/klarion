@@ -8,7 +8,7 @@
         @click="triggerDrawer(action)"
       >
         <Icon :name="action.icon" class="" />
-        <p class="font-small">{{ action.name }}</p>
+        <p class="font-small action-text">{{ action.name }}</p>
       </div>
     </div>
     <table-action-drawer
@@ -57,4 +57,8 @@ const drawerClosed = () => {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style  scoped>
+.action-text{
+    white-space: nowrap;
+}
+</style>
