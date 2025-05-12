@@ -7,7 +7,7 @@
         class="d-flex align-center ga-1 c-pointer"
         @click="triggerDrawer(action)"
       >
-        <Icon :name="action.icon" class="" />
+        <Icon :name="action.icon || ''" class="" />
         <p class="font-small action-text">{{ action.name }}</p>
       </div>
     </div>

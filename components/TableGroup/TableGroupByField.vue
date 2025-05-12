@@ -21,7 +21,7 @@
           hide-details
         >
           <template #prepend-inner>
-            <Icon :name="iconName" /> </template
+            <Icon :name="iconName || ''" /> </template
         ></v-select>
         <Icon
           name="mdi-close"

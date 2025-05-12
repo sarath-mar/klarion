@@ -10,13 +10,16 @@
           @click="removeFilter(key)"
         />
       </div>
-      <date-filter v-if="filter.type === 'date'" :filter-data="filter" />
+      <date-filter
+        v-if="filter.type === TABLE_FILTER_TYPES.DATE"
+        :filter-data="filter"
+      />
       <number-filter
-        v-else-if="filter.type === 'number'"
+        v-else-if="filter.type === TABLE_FILTER_TYPES.NUMBER"
         :filter-data="filter"
       />
       <string-filter
-        v-else-if="filter.type === 'string'"
+        v-else-if="filter.type === TABLE_FILTER_TYPES.STRING"
         :filter-data="filter"
       />
     </div>
@@ -25,6 +28,7 @@
 
 <script setup>
 import { defineProps } from "vue";
+import { TABLE_FILTER_TYPES } from "~/utils/constants.js";
 import DateFilter from "~/components/Filters/DateFilter.vue";
 import NumberFilter from "~/components/Filters/NumberFilter.vue";
 import StringFilter from "~/components/Filters/StringFilter.vue";

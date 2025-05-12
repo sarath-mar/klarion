@@ -9,7 +9,7 @@
     item-value="name"
     @update:options="loadItems"
     class="custom-header mt-5"
-    :group-by="isGroupBy && groupBy"
+    :group-by="isGroupBy ? groupBy : []"
     :group-desc="true"
   >
     <template v-slot:group-header="{ item, columns, toggleGroup, isGroupOpen }">
@@ -24,7 +24,9 @@
               variant="outlined"
               @click="toggleGroup(item)"
             ></v-btn>
-            <span class="ms-4">{{ groupBy[0]?.displayName }}: {{ item.value }}</span>
+            <span class="ms-4"
+              >{{ groupBy[0]?.displayName }}: {{ item.value }}</span
+            >
           </div>
         </td>
       </tr>
@@ -41,7 +43,7 @@ import {
   applyDateFilter,
   applyStringFilter,
 } from "~/mock-data/filterData.js";
-import { TABLE_ACTION } from "~/utils/constants.js";
+import { TABLE_ACTION, TABLE_FILTER_TYPES } from "~/utils/constants.js";
 const sharedData = inject("sharedData");
 const isGroupBy = ref(false);
 const groupBy = reactive([
@@ -94,13 +96,13 @@ const applyFilters = (data, filters) => {
 };
 const applyRemainingFilters = (data, remainingFilters) => {
   remainingFilters?.forEach((filter) => {
-    if (filter.type === "number") {
+    if (filter.type === TABLE_FILTER_TYPES.NUMBER) {
       data = applyNumberFilter(data, filter);
     }
-    if (filter.type === "string") {
+    if (filter.type === TABLE_FILTER_TYPES.STRING) {
       data = applyStringFilter(data, filter);
     }
-    if (filter.type === "date") {
+    if (filter.type === TABLE_FILTER_TYPES.DATE) {
       data = applyDateFilter(data, filter);
     }
   });
