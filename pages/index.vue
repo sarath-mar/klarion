@@ -1,7 +1,6 @@
 <template>
   <div class="pa-6">
-   
-    <paginated-table />
+   <paginated-table />
   </div>
 </template>
 

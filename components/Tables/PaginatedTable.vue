@@ -1,5 +1,5 @@
 <template>
-  <table-action />
+  <table-action @on-apply-click="onApplyClick" />
   <v-data-table-server
     v-model:items-per-page="itemsPerPage"
     :headers="tableHeader"
@@ -9,23 +9,48 @@
     item-value="name"
     @update:options="loadItems"
     class="custom-header mt-5"
-  ></v-data-table-server>
+    :group-by="isGroupBy && groupBy"
+    :group-desc="true"
+  >
+    <template v-slot:group-header="{ item, columns, toggleGroup, isGroupOpen }">
+      <tr>
+        <td :colspan="columns.length">
+          <div class="d-flex align-center">
+            <v-btn
+              :icon="isGroupOpen(item) ? '$expand' : '$next'"
+              color="medium-emphasis"
+              density="comfortable"
+              size="small"
+              variant="outlined"
+              @click="toggleGroup(item)"
+            ></v-btn>
+            <span class="ms-4">{{ groupBy[0]?.displayName }}: {{ item.value }}</span>
+          </div>
+        </td>
+      </tr>
+    </template>
+  </v-data-table-server>
 </template>
 
 <script setup>
 import TableAction from "~/components/Tables/TableAction.vue";
 import { ref, reactive, inject } from "vue";
 import { tableData as mockData, headerData } from "~/mock-data/tableData.js";
-import {applyNumberFilter, applyDateFilter, applyStringFilter  } from "~/mock-data/filterData.js";
+import {
+  applyNumberFilter,
+  applyDateFilter,
+  applyStringFilter,
+} from "~/mock-data/filterData.js";
+import { TABLE_ACTION } from "~/utils/constants.js";
 const sharedData = inject("sharedData");
-
-watch(
-  () => [sharedData.filterData, sharedData.groupData],
-  () => {
-    loadItems(pagination);
+const isGroupBy = ref(false);
+const groupBy = reactive([
+  {
+    key: "",
+    order: "",
+    displayName: "",
   },
-  { deep: true }
-);
+]);
 const tableHeader = headerData;
 const itemsPerPage = ref(10);
 const loading = ref(false);
@@ -36,7 +61,19 @@ const pagination = reactive({
   page: 1,
   itemsPerPage: itemsPerPage.value,
 });
-
+const onApplyClick = (type) => {
+  if (type === TABLE_ACTION.FILTER) {
+    isGroupBy.value = false;
+  } else if (type === TABLE_ACTION.GROUP) {
+    isGroupBy.value = true;
+    groupBy[0] = {
+      key: sharedData.groupData.field,
+      order: sharedData.groupData.orderBy,
+      displayName: sharedData.groupData.displayName,
+    };
+  }
+  loadItems(pagination);
+};
 const applyFilters = (data, filters) => {
   if (!filters) return data;
   if (filters.selectedFilterIssueType?.length) {

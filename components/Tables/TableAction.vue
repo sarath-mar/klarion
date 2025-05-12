@@ -20,6 +20,7 @@
 </template>
 
 <script setup>
+import { defineEmits } from "vue";
 import { TABLE_ACTION } from '~/utils/constants.js';
 import TableActionDrawer from "~/components/Drawer/TableActionDrawer.vue";
 const components = {
@@ -45,6 +46,7 @@ const actionData = [
 //     name: "Download",
 //   },
 ];
+const emit = defineEmits(["onApplyClick"]);
 const showDrawer = ref(false);
 const selectedAction = ref(null);
 const triggerDrawer = (action) => {
@@ -52,8 +54,9 @@ const triggerDrawer = (action) => {
   selectedAction.value = action;
   showDrawer.value = true;
 };
-const drawerClosed = () => {
+const drawerClosed = ({isApply,type}) => {
   showDrawer.value = false;
+  emit('onApplyClick',type);
 };
 </script>
 

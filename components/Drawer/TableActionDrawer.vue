@@ -87,10 +87,10 @@ const onApplyClick = () => {
     })
   );
   sharedData.groupData = groupData;
-  closeDrawer();
+  closeDrawer(true);
 };
-function closeDrawer() {
-  emit("drawerClosed");
+function closeDrawer(isApply=false) {
+  emit("drawerClosed",{isApply,type: props.selectedAction?.value});
 }
 </script>
 

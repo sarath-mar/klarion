@@ -32,7 +32,6 @@ const props = defineProps({
 });
 const emit = defineEmits(["selection-change"]);
 const onSelectionChange = (value) => {
-    
     emit("selection-change", value);
     autocompleteValue.value = null;
 };
